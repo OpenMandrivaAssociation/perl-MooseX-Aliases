@@ -12,6 +12,8 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Moose)
+BuildRequires: perl(Test::Exception)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -27,10 +29,10 @@ in the constructor via their aliased names.
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
@@ -44,5 +46,3 @@ rm -rf %buildroot
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
