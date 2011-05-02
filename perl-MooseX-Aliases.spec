@@ -1,9 +1,9 @@
 %define upstream_name    MooseX-Aliases
-%define upstream_version 0.09
+%define upstream_version 0.10
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Attribute metaclass trait for L<MooseX::Aliases>
 License:    GPL+ or Artistic
