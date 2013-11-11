@@ -1,2 +1,4 @@
+removed_sources:
+  MooseX-Aliases-0.10.tar.gz: c616e725f38dd07771407d37f77c616ed80539b9
 sources:
-  "MooseX-Aliases-0.10.tar.gz": c616e725f38dd07771407d37f77c616ed80539b9
+  MooseX-Aliases-0.11.tar.gz: e4ff6232b030b2208ebe689f30fa89d9db33ee81
