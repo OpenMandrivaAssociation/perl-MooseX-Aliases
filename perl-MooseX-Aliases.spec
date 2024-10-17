@@ -8,7 +8,7 @@ Release:	3
 Summary:	Attribute metaclass trait for L<MooseX::Aliases>
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/MooseX/MooseX-Aliases-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
