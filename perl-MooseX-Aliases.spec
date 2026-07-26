@@ -1,15 +1,13 @@
 %define upstream_name    MooseX-Aliases
-%define upstream_version 0.11
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.11
+Release:	5
 
 Summary:	Attribute metaclass trait for L<MooseX::Aliases>
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/doy/moosex-aliases
-Source0:	https://cpan.metacpan.org/authors/id/D/DO/DOY/MooseX-Aliases-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DO/DOY/MooseX-Aliases-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -26,7 +24,7 @@ accessors as well as the standard ones. Attributes can also be initialized
 in the constructor via their aliased names.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
