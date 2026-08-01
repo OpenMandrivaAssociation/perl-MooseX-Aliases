@@ -2,7 +2,7 @@
 %define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	0.11
-Release:	3
+Release:	4
 
 Summary:	Attribute metaclass trait for L<MooseX::Aliases>
 License:	GPL+ or Artistic
@@ -34,6 +34,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %check
 # soft: do not fail package on test failures
 set +e
+make test || :
 %make test || :
 
 %install
